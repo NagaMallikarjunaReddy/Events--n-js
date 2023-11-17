@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onload</title>
+	<script>
+		function load(x){
+			document.getElementById('i').innerHTML='Page is loaded'
+		}
+	</script>
+</head>
+<body>
+	<h1>Onload:-Ouccers when a page is loaded</h1>
+	<iframe id="if" onload="load(this)" src="https://www.youtube.com/embed/7PIji8OubXU"></iframe>
+	<p id='i'></p>
+
+</body>
+</html>

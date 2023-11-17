@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onkeydown</title>
+	<script>
+		function demo(x){
+			document.fm.fn.value=x.toUpperCase();
+		}
+		function demo1(x) {
+			document.fl.mn.value=x.toUpperCase();
+		}
+		function demo2(x) {
+			document.ff.ln.value=x.toUpperCase();
+		}
+	</script>
+</head>
+<body>
+	<h1>onkeydown:- Ouccers when the user press a key on the keyboard</h1>
+	<form name="fm">
+		<input type="text" placeholder="Enter ur first name" name="fn" onkeydown="demo(value)">
+	</form>
+	<h1>onkeyup:-Ouccers when the user releases the key on the keyboard</h1>
+	<form name="fl">
+		<input type="text" placeholder="Enter ur middle  name" name="mn" onkeyup="demo1(value)">
+	</form>
+	<h1>Onkeypress:-Ouccers when the user press a key on keyboard</h1>
+	<form name="ff">
+		<input type="text" placeholder="Enter ur Last  name" name="ln" onkeypress="demo2(value)">
+	</form>
+</body>
+</html>

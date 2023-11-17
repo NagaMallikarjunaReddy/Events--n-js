@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onsubmit</title>
+</head>
+<script>
+	function sub(x){
+		let m=document.forms['myform']['n'].value;
+		if (m ==""){
+			alert('please enter data');
+		}
+		else{
+			document.getElementById('demo').innerHTML='data submited'
+			alert('click ok to submit the data');
+		}
+	}
+</script>
+<body>
+<h1>onsubmit:-Executes when ever the data is submited</h1>
+<form name="myform" onsubmit="sub(this)">
+	<input  id="a" type="text" name="n" placeholder="enter ur name">
+	<input type="submit"  value="submit">
+</form>
+<p id="demo"></p>
+</body>
+</html>

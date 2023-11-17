@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onchange</title>
+</head>
+<body>
+	<h1>Onchange</h1>
+	<h2>Works when user modifies or changes the value of form element</h2>
+<p>Please select the color from the dropdown</p>
+<select id="change" onchange="myfunction(value)">
+	<option value=" ">Select a color</option>
+	<option value="red">Red</option>
+	<option value="blue">Blue</option>
+	<option value="green">Green</option>
+</select>
+<p id="demo" style="color:white"></p>
+<script>
+	function myfunction(x) {
+		document.bgColor=x;
+		document.getElementById('demo').innerHTML='your color is '+x;
+		alert('the background color is changed')
+	}
+</script>
+</body>
+</html>

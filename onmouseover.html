@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mouseover/out</title>
+</head>
+<body>
+	<h1>onmouseover:</h1>
+	<p><b>Ouccers when the mouse pointer enters the element</b></p>
+	<h1>onmouseout:</h1>
+	<p><b>Ouccers when the mouse pointer ouse away from the element</b></p>
+<h1 id='demo' onmouseover="mouseover('red')" onmouseout="mouseout('black')">Mouse on me</h1>
+<script>
+	function mouseover(argument) {
+		document.getElementById('demo').style.color='red';
+	}
+	function mouseout(argument){
+		document.getElementById('demo').style.color='black';
+	}
+</script>
+</body>
+</html>
